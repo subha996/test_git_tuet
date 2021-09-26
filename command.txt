@@ -1,0 +1,155 @@
+Microsoft Windows [Version 10.0.19042.1237]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git init
+Reinitialized existing Git repository in E:/Test/git_command_test_1/.git/
+
+E:\Test\git_command_test_1>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md
+        new file:   test1.py
+
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git commit -m "first commit"
+[master (root-commit) 12435ef] first commit
+ 2 files changed, 4 insertions(+)
+ create mode 100644 readme.md
+ create mode 100644 test1.py
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\Test\git_command_test_1>git add .  
+
+E:\Test\git_command_test_1>git status
+On branch master        
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   readme.md
+
+
+E:\Test\git_command_test_1>git commit -m "made changes second commit"
+[master 30d77c7] made changes second commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git checkout -b new_branch
+Switched to a new branch 'new_branch'
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git add .
+
+E:\Test\git_command_test_1>git commit -m "commit new_brach third commit"
+[new_branch a042d9f] commit new_brach third commit
+ 1 file changed, 2 insertions(+)
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git checkout master
+Switched to branch 'master'
+
+E:\Test\git_command_test_1>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git checkout new_branch
+Switched to branch 'new_branch'
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git checkout new_branch
+Already on 'new_branch'
+
+E:\Test\git_command_test_1>git merge master
+Already up to date.
+
+E:\Test\git_command_test_1>git checkout master
+Switched to branch 'master'
+
+E:\Test\git_command_test_1>git checkout new_branch
+error: Your local changes to the following files would be overwritten by checkout:
+        readme.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+E:\Test\git_command_test_1>git add .
+
+E:\Test\git_command_test_1>git commit -m "kk"
+[master 9b88079] kk
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 test2.py
+
+E:\Test\git_command_test_1>git checkout new_branch
+Switched to branch 'new_branch'
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git add .
+
+E:\Test\git_command_test_1>git commit -m "commit meeseage"
+[new_branch 526ad9c] commit meeseage
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git remote add origin https://github.com/subha996/test_git_tuet.git
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git checkout master
+Switched to branch 'master'
+
+E:\Test\git_command_test_1>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 999 bytes | 499.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/subha996/test_git_tuet.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>
+E:\Test\git_command_test_1>git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 765 bytes | 8.00 KiB/s, done.
+From https://github.com/subha996/test_git_tuet
+ * branch            master     -> FETCH_HEAD
+   9b88079..2467e14  master     -> origin/master
+Updating 9b88079..2467e14
+Fast-forward
+ readme.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+E:\Test\git_command_test_1>
