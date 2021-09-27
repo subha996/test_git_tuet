@@ -35,24 +35,18 @@ git push -u origin master
 ```git init```
 
 ### Adding all folder and files to git local cache
-``` git add . 
+``` git add .
 ```
 
 ### Commiting all the files to local git cache, it is telling git that you are ready to push the code to remote server (github.com or github website)
-```
-git commit -m "commit message"
-```
+```git commit -m "commit message"```
 
 ### Adding your remote repository link. Create this manually from gihub website or from terminal
 
-``` 
-git remote add origin https://github.com/subha996/repository_name.git
-```
+``` git remote add origin https://github.com/subha996/repository_name.git```
 
 ### Pusing code and files or Sending code and file to remote server or gthub website
-```
-git push -u origin master
-```
+```git push -u origin master```
 
 ### Now you are done, refresh your repository to see the changes 😋😋
 
