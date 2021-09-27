@@ -35,7 +35,9 @@ git push -u origin master
 ```git init```
 
 ### Adding all folder and files to git local cache
-``` git add .
+``` 
+git add .
+
 ```
 
 ### Commiting all the files to local git cache, it is telling git that you are ready to push the code to remote server (github.com or github website)
