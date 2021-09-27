@@ -23,3 +23,7 @@ git branch -M main
 git push -u origin main
 ```
 
+## also use to push code from local to github website
+```bash
+git push -u origin master
+```
