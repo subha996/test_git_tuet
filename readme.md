@@ -25,7 +25,9 @@ git push -u origin master
 # Finalized Version Here...
 
 ### to initialize git
-```git init```
+```
+git init
+```
 
 ### Adding all folder and files to git local cache
 ``` 
