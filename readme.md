@@ -53,4 +53,5 @@ git push -u origin master
 
 ### Now you are done, refresh your repository to see the changes 😋😋
 
-
+## For pulling the file and folder from github
+``` git pull origin master```
